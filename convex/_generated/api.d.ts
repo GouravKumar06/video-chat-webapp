@@ -15,9 +15,9 @@ import type {
 } from "convex/server";
 import type * as clerk from "../clerk.js";
 import type * as conversations from "../conversations.js";
+import type * as groq from "../groq.js";
 import type * as http from "../http.js";
 import type * as messages from "../messages.js";
-import type * as openai from "../openai.js";
 import type * as users from "../users.js";
 
 /**
@@ -31,9 +31,9 @@ import type * as users from "../users.js";
 declare const fullApi: ApiFromModules<{
   clerk: typeof clerk;
   conversations: typeof conversations;
+  groq: typeof groq;
   http: typeof http;
   messages: typeof messages;
-  openai: typeof openai;
   users: typeof users;
 }>;
 export declare const api: FilterApi<
